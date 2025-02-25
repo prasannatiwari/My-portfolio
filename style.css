@@ -1,1 +1,232 @@
 
+/* Applying Google Font over the website */
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* Styling menu icon */
+.nav-menu{
+    border: none;
+    background-color: transparent;
+    font-size: 1.8rem;
+    color: #ff7f50;
+    cursor: pointer;
+}
+
+/* Styling navbar links */
+.navbar-nav a{
+    color: #333;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover{
+    color: #ff7f50;
+}
+
+.navbar-nav a:after {    
+    content: "";
+    display: block;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    background: #ff7f50;
+    transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    width: 0;
+}
+
+.navbar-nav a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+/* Styling contact button */
+.c-btn{
+    border: none;
+    background: #ff7f50;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.c-btn:hover{
+    background: #e76f42;
+}
+
+/* Home section styles */
+.home{
+    background: linear-gradient(45deg, rgba(240,240,255,1) 0%, rgba(220,240,255,1) 100%);
+    padding: 50px 0;
+}
+
+.home h2{
+    font-size: 3rem;
+    line-height: 4rem;
+    font-weight: bold;
+}
+
+.c-orange{
+    color: #6f34fe;
+    font-weight: 700;
+    font-size: 4rem;
+}
+
+.home p{
+    font-size: 1.2rem;
+    max-width: 600px;
+}
+
+.h-btn{
+    padding: 12px 25px;
+    background: #6f34fe;
+    color: #fff;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.h-btn:hover{
+    background: #5531c7;
+    transform: translateY(-10px);
+}
+
+/* Floating animation for home section image */
+.home img{
+    animation: floatimg 4s ease-in-out infinite;
+}
+
+@keyframes floatimg {
+    0%{ transform: translateY(0); }
+    50%{ transform: translateY(-15px); }
+    100%{ transform: translateY(0); }
+}
+/* Default (light) theme styles */
+body {
+    background-color: #fff;
+    color: #000;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Button styles for the theme toggle */
+.theme-toggle-btn {
+    background-color: transparent;
+    border: none;
+    color: #3f396d;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+/* Align the button to the right of the navbar */
+#navbar-top .container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navbar alignment and spacing */
+.navbar-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #2c2c2c;
+    color: #fff;
+}
+
+header.dark-theme {
+    background-color: #444;
+}
+
+/* Icons visibility toggle */
+#sun-icon {
+    display: block;
+}
+
+#moon-icon {
+    display: none;
+}
+
+/* Show moon icon when dark theme is applied */
+body.dark-theme #sun-icon {
+    display: none;
+}
+
+body.dark-theme #moon-icon {
+    display: block;
+}
+#about {
+    display: none; /* Hide by default */
+    transition: all 0.5s ease; /* Optional smooth transition */
+  }
+  
+  #about.show {
+    display: block; /* Show the section when the class is added */
+  }
+  
+  /* Theme button styles */
+.theme-toggle-btn {
+    background-color: transparent;
+    border: 2px solid #2b1ba3;
+    color: #2b1ba3;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    margin-left: 20px;
+  }
+  
+  .theme-toggle-btn:hover {
+    background-color: #2b1ba3;
+    color: #fff;
+  }
+  
+  .theme-toggle-btn:focus {
+    outline: none;
+  }
+  
+  /* Smooth transition for theme change */
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body.dark-theme {
+    background-color: #121212;
+    color: #ffffff;
+  }
+  
+  /* Change navbar background in dark theme */
+  body.dark-theme .navbar {
+    background-color: #2b1ba3;
+  }
+  
+  body.dark-theme .theme-toggle-btn {
+    border-color: #fff;
+    color: #fff;
+  }
+  
+  body.dark-theme .theme-toggle-btn:hover {
+    background-color: #fff;
+    color: #2b1ba3;
+  }
+  #resume {
+    display: none; /* Hide resume section initially */
+  }
+  
